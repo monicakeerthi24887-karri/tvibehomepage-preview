@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { User, Star, Briefcase, Calendar, MapPin, Link as LinkIcon, Instagram, Twitter } from 'lucide-react';
+import { User, Star, Briefcase, Calendar, MapPin, Link as LinkIcon, Camera, MessageCircle } from 'lucide-react';
 
 export default function UserProfilePage({ params }) {
   const { username } = params;

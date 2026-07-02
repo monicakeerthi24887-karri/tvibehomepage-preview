@@ -2,9 +2,6 @@
 
 import Link from "next/link";
 import {
-  Instagram,
-  Facebook,
-  Youtube,
   Mail,
   Phone,
 } from "lucide-react";
@@ -28,55 +25,30 @@ export default function Footer() {
             TVIBE connects creators, businesses, organizers and fans through one
             powerful community platform.
           </p>
-
-          <div className="mt-6 flex gap-3">
-            <a
-              href="https://www.instagram.com/tvibe.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:bg-gradient-to-r hover:from-pink-500 hover:to-orange-500"
-            >
-              <Instagram className="h-5 w-5 text-white" />
-            </a>
-
-            <a
-              href="https://www.facebook.com/tvibe.ca"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:bg-gradient-to-r hover:from-pink-500 hover:to-orange-500"
-            >
-              <Facebook className="h-5 w-5 text-white" />
-            </a>
-
-            <a
-              href="https://www.youtube.com/@Tvibe.canada"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:bg-gradient-to-r hover:from-pink-500 hover:to-orange-500"
-            >
-              <Youtube className="h-5 w-5 text-white" />
-            </a>
-          </div>
         </div>
 
         <div>
           <h4 className="font-qurova text-lg font-bold">Communities</h4>
+
           <ul className="mt-5 space-y-3 text-sm font-semibold text-white/65">
             <li>
               <Link href="/creators" className="hover:text-white">
                 Creators
               </Link>
             </li>
+
             <li>
               <Link href="/businesses" className="hover:text-white">
                 Businesses
               </Link>
             </li>
+
             <li>
               <Link href="/organizers" className="hover:text-white">
                 Organizers
               </Link>
             </li>
+
             <li>
               <Link href="/explore" className="hover:text-white">
                 Fans
@@ -87,22 +59,26 @@ export default function Footer() {
 
         <div>
           <h4 className="font-qurova text-lg font-bold">Platform</h4>
+
           <ul className="mt-5 space-y-3 text-sm font-semibold text-white/65">
             <li>
               <Link href="/explore" className="hover:text-white">
                 Explore
               </Link>
             </li>
+
             <li>
               <Link href="/events" className="hover:text-white">
                 Events
               </Link>
             </li>
+
             <li>
               <Link href="/creator-space" className="hover:text-white">
                 Creator Space
               </Link>
             </li>
+
             <li>
               <Link href="/sponsors" className="hover:text-white">
                 Sponsors
@@ -147,8 +123,8 @@ export default function Footer() {
               />
 
               <button className="min-w-[110px] bg-gradient-to-r from-[#ff4f9d] to-[#ff8a00] px-4 py-3 text-sm font-bold text-white whitespace-nowrap transition-all duration-300 hover:from-[#ff8a00] hover:to-[#ff4f9d]">
-  Join Waitlist
-</button>
+                Join Waitlist
+              </button>
             </div>
           </div>
         </div>
@@ -161,9 +137,11 @@ export default function Footer() {
           <Link href="/info" className="hover:text-white">
             Privacy Policy
           </Link>
+
           <Link href="/info" className="hover:text-white">
             Terms
           </Link>
+
           <Link href="/contact" className="hover:text-white">
             Contact
           </Link>
