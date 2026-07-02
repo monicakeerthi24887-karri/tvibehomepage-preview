@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
-import { Check, Chrome, Apple, Lock, Mail, Phone, User, ArrowRight, MapPin } from "lucide-react";
+import { Check, Globe, Apple, Lock, Mail, Phone, User, ArrowRight, MapPin } from "lucide-react";
 
 export default function Register() {
   const [formData, setFormData] = useState({
@@ -364,7 +364,7 @@ export default function Register() {
                 onClick={() => alert("Google sign-in is simulated. Please use the form registration.")}
                 className="flex items-center justify-center space-x-2 bg-white border border-[#d1d9e6] rounded-xl py-3 text-[10px] font-black uppercase tracking-widest text-[#666666] hover:text-[#1a1a1a] hover:border-[#1a1a1a] transition-all shadow-sm hover:shadow-md"
               >
-                <Chrome strokeWidth={2} className="h-4 w-4" />
+                <Globe strokeWidth={2} className="h-4 w-4" />
                 <span>Google</span>
               </button>
               <button

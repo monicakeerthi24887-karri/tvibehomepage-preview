@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Mail, Phone, Instagram, Check, Send } from "lucide-react";
+import { Mail, Phone, Check, Send } from "lucide-react";
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -86,8 +86,7 @@ export default function Contact() {
   const contactOptions = [
     { icon: Phone, title: "WhatsApp Support", details: "+1 (647) 495-4460", link: "https://wa.me/16474954460", color: "#34c759" },
     { icon: Mail, title: "Email Inquiries", details: "info@tvibe.ca", link: "mailto:info@tvibe.ca", color: "#00F0FF" },
-    { icon: Instagram, title: "Official Instagram", details: "@tvibe.ca", link: "https://instagram.com/tvibe.ca", color: "#ff6b00" }
-  ];
+      ];
 
   return (
     <div className="flex flex-col min-h-screen bg-transparent text-[#1a1a1a] font-sans relative">

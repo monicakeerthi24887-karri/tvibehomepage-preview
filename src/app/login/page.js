@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
-import { Chrome, Apple, Lock, Mail, ArrowRight } from "lucide-react";
+import { Globe, Apple, Lock, Mail, ArrowRight } from "lucide-react";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -170,7 +170,7 @@ export default function Login() {
                 onClick={() => alert("Google login is simulated. Please log in using the email form.")}
                 className="flex items-center justify-center space-x-2 bg-white border border-[#d1d9e6] rounded-xl py-3 text-[10px] font-black uppercase tracking-widest text-[#666666] hover:text-[#1a1a1a] hover:border-[#1a1a1a] transition-all shadow-sm hover:shadow-md"
               >
-                <Chrome strokeWidth={2} className="h-4 w-4" />
+                <Globe strokeWidth={2} className="h-4 w-4" />
                 <span>Google</span>
               </button>
               <button
